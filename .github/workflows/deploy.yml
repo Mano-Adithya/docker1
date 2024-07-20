@@ -52,5 +52,5 @@ jobs:
             docker pull ${{ secrets.DOCKER_USERNAME }}/my-html-app:latest
             docker stop my-html-app || true
             docker rm my-html-app || true
-            docker run -d --name my-html-app -p 80:80 ${{ secrets.DOCKER_USERNAME }}/my-html-app:latest
+            docker run -d --name my-html-app -p 81:80 ${{ secrets.DOCKER_USERNAME }}/my-html-app:latest
           EOF
